@@ -7,7 +7,7 @@ use App\Http\Controllers\MasterClassController;
 use App\Http\Controllers\RegistrationController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get( '/', [HomeController::class, 'index'] )->name( 'home' );
 Route::get('/category/{id}', [HomeController::class, 'category'])->name('category.show');
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
